@@ -12,6 +12,7 @@ local stat = false
 
 function termal:__construct()
 	vRP.Extension.__construct(self)
+	vRP.EXT.Inventory:defineItem("termali", "Ochelari Termali", "", nil, 0,5)
 	vRP.EXT.GUI:registerMenuBuilder("main", function(menu)
 		local user = menu.user
 		if user:hasPermission("termal.politie") and user:getItemAmount("termali") then
