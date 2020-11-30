@@ -6,8 +6,8 @@
 -----------------------------------------------------------
 
 RegisterNetEvent('termali')
-AddEventHandler('termali', function(nimicnuface)
-	if nimicnuface then
+AddEventHandler('termali', function(a)
+	if a then
 		SetNightvision(true)
 		SetSeethrough(true)
 	  else
